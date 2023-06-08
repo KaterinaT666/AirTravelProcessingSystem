@@ -6,4 +6,5 @@ package rus.tokan;
  */
 public class AppTest {
 
+
 }
