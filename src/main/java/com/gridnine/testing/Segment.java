@@ -1,11 +1,11 @@
-package rus.tokan;
+package com.gridnine.testing;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Objects;
 
 /**
- * Bean that represents a flight segment.
+ * Компонент, представляющий сегмент полета.
  */
 public class Segment {
     private final LocalDateTime departureDate;
