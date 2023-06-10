@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Класс для фильтрации списка рейсов
+ * Класс для фильтрации списка рейсов.
  */
 
 public class FlightFilterImpl implements FlightFilter {
@@ -16,7 +16,7 @@ public class FlightFilterImpl implements FlightFilter {
     private final List <Flight> tempListFlights = new ArrayList<>();
 
     /**
-     * Метод получения всех полетов
+     * Метод получения всех полетов.
      * @param flights
      */
     @Override
@@ -25,7 +25,7 @@ public class FlightFilterImpl implements FlightFilter {
     }
 
     /**
-     * Фильтр полетов в которых вылет до текущего момента времени
+     * Фильтр полетов в которых вылет до текущего момента времени.
      * @param flights
      * @return tempListFlights
      */
@@ -46,7 +46,7 @@ public class FlightFilterImpl implements FlightFilter {
     }
 
     /**
-     * Фильтр полетов в которых имеются сегменты с датой прилёта раньше даты вылета
+     * Фильтр полетов в которых имеются сегменты с датой прилёта раньше даты вылета.
      * @param flights
      * @return tempListFlights
      */
@@ -68,7 +68,7 @@ public class FlightFilterImpl implements FlightFilter {
 
     /**
      * Фильтр полетов в которых общее время, проведённое на земле превышает два часа
-     * (время на земле — это интервал между прилётом одного сегмента и вылетом следующего за ним)
+     * (время на земле — это интервал между прилётом одного сегмента и вылетом следующего за ним).
      * @param flights
      * @return tempListFlights
      */
@@ -91,7 +91,7 @@ public class FlightFilterImpl implements FlightFilter {
     }
 
     /**
-     * Метод отображения информации о рейсе
+     * Метод отображения информации о рейсе.
      * @param flight
      * @param dep
      * @param arr
