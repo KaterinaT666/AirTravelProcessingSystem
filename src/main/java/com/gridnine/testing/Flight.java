@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * Компонент, представляющий полет.
+ * Класс, представляющий полеты.
  */
 public class Flight {
     private final List<Segment> segments;
