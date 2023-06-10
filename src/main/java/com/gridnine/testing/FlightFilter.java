@@ -7,16 +7,16 @@ import java.util.List;
  */
 public interface FlightFilter {
 
-    // Все полеты
+    // Все полеты.
     void getAllFlights(List<Flight> flights);
 
-    //Фильтр полетов в которых вылет до текущего момента времени
+    //Фильтр полетов в которых вылет до текущего момента времени.
     List<Flight> filterUpToTheCurrentTime(List<Flight> flights);
 
-    // Фильтр полетов в которых имеются сегменты с датой прилёта раньше даты вылета
+    // Фильтр полетов в которых имеются сегменты с датой прилёта раньше даты вылета.
     List<Flight> filterSegmentsWithArrivalDateBeforeDepartureDate(List<Flight> flights);
 
     //Фильтр полетов в которых общее время, проведённое на земле превышает два часа
-    // (время на земле — это интервал между прилётом одного сегмента и вылетом следующего за ним)
+    // (время на земле — это интервал между прилётом одного сегмента и вылетом следующего за ним).
     List<Flight> filterOnEarthMoreThanTwoHours(List<Flight> flights);
 }

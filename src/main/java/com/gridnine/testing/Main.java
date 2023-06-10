@@ -6,8 +6,7 @@ import java.util.List;
  * Класс для проверочного запуска приложения
  *
  */
-public class Main
-{
+public class Main {
     public static void main( String[] args ) {
         List<Flight> flights =  FlightBuilder.createFlights();
         FlightFilterImpl flightFilter = new FlightFilterImpl();
