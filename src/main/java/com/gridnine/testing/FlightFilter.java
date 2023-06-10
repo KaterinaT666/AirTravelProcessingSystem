@@ -9,6 +9,7 @@ public interface FlightFilter {
 
     // Все полеты
     void getAllFlights(List<Flight> flights);
+
     //Фильтр полетов в которых вылет до текущего момента времени
     List<Flight> filterUpToTheCurrentTime(List<Flight> flights);
 
